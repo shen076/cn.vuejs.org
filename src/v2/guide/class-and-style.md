@@ -199,9 +199,9 @@ data: {
 从 2.3 开始你可以为 `style` 绑定中的属性提供一个包含多个值的数组，常用于提供多个带前缀的值：
 
 ``` html
-<div :style="{ display: ["-webkit-box", "-ms-flexbox", "flex"] }">
+<div :style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }">
 ```
-
+这只会显示浏览器支持的数组中的最后一个值。这个例子，在支持无前缀版本的flexbox中，它将渲染为 display: flex
 ***
 
 > 原文：http://vuejs.org/guide/class-and-style.html
